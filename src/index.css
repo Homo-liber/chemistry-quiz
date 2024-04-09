@@ -1,0 +1,24 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --accent-color1: #754668;
+  --accent-color2: #587d71;
+  --green1: #b5dda4;
+  --green2: #4daa57;
+  --bg-color: #f9eccc;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+}

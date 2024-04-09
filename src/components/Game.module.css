@@ -1,0 +1,78 @@
+.container {
+  color: var(--accent-color1);
+  background-color: var(--green1);
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.answerBox {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--bg-color);
+  color: var(--accent-color1);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--green2);
+}
+
+.nextbutton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 35px;
+  background-color: var(--accent-color2);
+  color: var(--bg-color);
+  border: none;
+  padding: 20px;
+  width: 300px;
+  border-radius: 13px;
+}
+
+.nextbutton:hover {
+  background-color: var(--bg-color);
+  color: var(--accent-color1);
+}
+
+.nextbutton:active {
+  background-color: var(--green2);
+}
+
+.buttongame {
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.buttongame:hover {
+  background-color: var(--green2);
+  color: var(--bg-color);
+}
+
+.buttongame:active {
+  background-color: var(--accent-color2);
+  color: #000;
+}
