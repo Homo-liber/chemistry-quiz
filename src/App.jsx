@@ -2,6 +2,7 @@ import "./App.css";
 import WelcomePage from "./components/WelcomePage";
 import Game from "./components/Game";
 import Ads from "./components/Ads";
+import DetailsAds from "./components/DetailsAds";
 import ResultPage from "./components/ResultPage";
 import { useState } from "react";
 
@@ -44,6 +45,16 @@ function App() {
         </button>
         <button
           style={{
+            backgroundColor: currentPage === "details" ? "#4daa57" : "#f9eccc",
+          }}
+          onClick={() => {
+            setCurrentPage("details");
+          }}
+        >
+          Details
+        </button>
+        <button
+          style={{
             backgroundColor: currentPage === "result" ? "#4daa57" : "#f9eccc",
           }}
           onClick={() => {
@@ -63,6 +74,8 @@ function App() {
         <Ads setCurrentPage={setCurrentPage} />
       ) : currentPage === "result" ? (
         <ResultPage setCurrentPage={setCurrentPage} />
+      ) : currentPage === "details" ? (
+        <DetailsAds setCurrentPage={setCurrentPage} />
       ) : (
         <h2>Seite nicht gefunden</h2>
       )}

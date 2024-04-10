@@ -1,5 +1,5 @@
 import styles from "./WelcomePage.module.css";
-import startPic from "../assets/startpic.jpg";
+import startPic from "../../src/assets/startpic.jpg";
 
 export default function WelcomePage({ setCurrentPage }) {
   return (

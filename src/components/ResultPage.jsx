@@ -5,7 +5,14 @@ export default function ResultPage({ setCurrentPage }) {
     <>
       <div className={styles.container}>
         <h2>RESULT</h2>
-        Congratulations! 🧬 Excellent result!
+        Congratulations User! 🧬 Excellent result!
+        <div className={styles.yellowBox}>
+          <p>You answered</p>
+          <p>13 out of 15</p>
+          <p>questions correctly</p>
+          <p>Great result!</p>
+          <p>🎉 🥳</p>
+        </div>
         <button
           className={styles.resultbutton}
           onClick={() => {
