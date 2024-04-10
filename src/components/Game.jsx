@@ -1,5 +1,5 @@
 import styles from "./Game.module.css";
-import { questions } from "../assets/data/questions";
+import { questions } from "../data/questions";
 import { useState } from "react";
 
 export default function Game({ setCurrentPage }) {
@@ -13,37 +13,38 @@ export default function Game({ setCurrentPage }) {
 
   return (
     <>
-      {/* selectedOption == questions[currentIndex].correctAnswer
-            ? green
-            : red, */}
       <div className={styles.container}>
         <h2>GAME</h2>
-        {currentIndex + 1} / 5 <br />
+        {currentIndex + 1} / {questions.length} <br />
         {questions[currentIndex].q}
         <br />
-        <div
-          className={styles.answerBox}
-          // style={{ backgroundColor: "lightblue" }}
-          style={{
-            backgroundColor:
-              selectedOption == questions[currentIndex].correctAnswer
-                ? green
-                : red,
-          }}
-        >
+        {/* <div className={styles.answerBox}>
           <input
             id=""
             type="radio"
             name="answers"
             value="answerA"
-            checked={selectedOption === 0}
             onChange={() => {
               setSelectedOption(0);
             }}
+            checked={selectedOption === 0}
+          />
+          <p>A: {questions[currentIndex].answer[0]}</p>
+        </div> */}
+        <div id="answerA" className={styles.answerBox}>
+          <input
+            id=""
+            type="radio"
+            name="answers"
+            value="answerA"
+            onChange={() => {
+              setSelectedOption(0);
+            }}
+            checked={selectedOption === 0}
           />
           <p>A: {questions[currentIndex].answer[0]}</p>
         </div>
-        <div className={styles.answerBox}>
+        <div id="answerB" className={styles.answerBox}>
           <input
             id=""
             type="radio"
@@ -56,7 +57,7 @@ export default function Game({ setCurrentPage }) {
           />
           <p>B: {questions[currentIndex].answer[1]}</p>
         </div>
-        <div className={styles.answerBox}>
+        <div id="answerC" className={styles.answerBox}>
           <input
             id=""
             type="radio"
@@ -69,7 +70,7 @@ export default function Game({ setCurrentPage }) {
           />
           <p>C: {questions[currentIndex].answer[2]}</p>
         </div>
-        <div className={styles.answerBox}>
+        <div id="answerD" className={styles.answerBox}>
           <input
             id=""
             type="radio"
@@ -99,3 +100,12 @@ export default function Game({ setCurrentPage }) {
     </>
   );
 }
+
+// style={{
+//   backgroundColor:
+//     selectedOption === null
+//       ? undefined
+//       : selectedOption != questions[currentIndex].correctAnswer
+//       ? "#ff9999"
+//       : "#4daa57",
+// }}

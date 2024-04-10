@@ -1,21 +1,29 @@
 import styles from "./Ads.module.css";
-import { questions } from "../assets/data/questions.js";
+import adsPhoto from "../../src/assets/ads.jpg";
 
 export default function Ads({ setCurrentPage }) {
   return (
     <>
       <div className={styles.container}>
         <h2>Advertisement</h2>
-        <h2>50% Rabbat!</h2>
-        Studying science is fun! Subscribe to our YouTube channel and be the
-        first to know about discoveries in the world of science!
+        <img src={adsPhoto} alt="adsImage" className={styles.adsImage} />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sint
+        nulla rem est totam illo veniam quam error! Eius, aspernatur.
+        <button
+          className={styles.adsbutton}
+          onClick={() => {
+            setCurrentPage("details");
+          }}
+        >
+          More about promotion
+        </button>
         <button
           className={styles.adsbutton}
           onClick={() => {
             setCurrentPage("result");
           }}
         >
-          RESULT
+          See result
         </button>
       </div>
     </>

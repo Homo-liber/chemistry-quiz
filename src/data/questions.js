@@ -39,37 +39,4 @@ export const questions = [
     correctAnswer: 2,
     index: 4,
   },
-  {
-    q: "What is the density of matter in the nucleus of an atom?",
-    answer: [
-      "10 times the density of water",
-      "it is different for different substances",
-      "0.5*10^12kg/cm³",
-      "unfortunately, scientists don’t know this yet",
-    ],
-    correctAnswer: 2,
-    index: 4,
-  },
-  {
-    q: "What is the density of matter in the nucleus of an atom?",
-    answer: [
-      "10 times the density of water",
-      "it is different for different substances",
-      "0.5*10^12kg/cm³",
-      "unfortunately, scientists don’t know this yet",
-    ],
-    correctAnswer: 2,
-    index: 4,
-  },
-  {
-    q: "What is the density of matter in the nucleus of an atom?",
-    answer: [
-      "10 times the density of water",
-      "it is different for different substances",
-      "0.5*10^12kg/cm³",
-      "unfortunately, scientists don’t know this yet",
-    ],
-    correctAnswer: 2,
-    index: 4,
-  },
 ];
