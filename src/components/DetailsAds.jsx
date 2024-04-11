@@ -1,6 +1,6 @@
 import styles from "./DetailsAds.module.css";
 
-export default function DetailsAds() {
+export default function DetailsAds({ setCurrentPage }) {
   return (
     <>
       <div className={styles.container}>
@@ -12,9 +12,7 @@ export default function DetailsAds() {
           nisi eveniet amet enim possimus, perferendis doloribus tempora
           mollitia distinctio voluptatem rem? <br />
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          ea eaque at deserunt reprehenderit officiis illum dolorem inventore
-          nisi eveniet amet enim possimus, perferendis doloribus tempora
-          mollitia distinctio voluptatem
+          ea.
         </p>
 
         <a
@@ -23,6 +21,15 @@ export default function DetailsAds() {
         >
           https://www.deutsches-chemie-museum.de/
         </a>
+
+        <button
+          className={styles.backbutton}
+          onClick={() => {
+            setCurrentPage("ads");
+          }}
+        >
+          BACK
+        </button>
       </div>
     </>
   );
