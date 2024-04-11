@@ -15,7 +15,7 @@ export default function Ads({ setCurrentPage }) {
             setCurrentPage("details");
           }}
         >
-          More about promotion
+          About promotion
         </button>
         <button
           className={styles.adsbutton}

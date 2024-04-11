@@ -13,3 +13,24 @@
 .detailsLink {
   color: #ff3333;
 }
+
+.backbutton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 35px;
+  background-color: var(--accent-color2);
+  color: var(--bg-color);
+  border: none;
+  padding: 20px 60px;
+  border-radius: 13px;
+}
+
+.backbutton:hover {
+  background-color: var(--bg-color);
+  color: var(--accent-color1);
+}
+
+.backbutton:active {
+  background-color: var(--green2);
+}
