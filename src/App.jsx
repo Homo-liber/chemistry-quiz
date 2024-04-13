@@ -15,6 +15,7 @@ function App() {
         <button
           style={{
             backgroundColor: currentPage === "welcome" ? "#4daa57" : "#f9eccc",
+            color: "#754668",
           }}
           onClick={() => {
             setCurrentPage("welcome");
@@ -26,6 +27,7 @@ function App() {
         <button
           style={{
             backgroundColor: currentPage === "game" ? "#4daa57" : "#f9eccc",
+            color: "#754668",
           }}
           onClick={() => {
             setCurrentPage("game");
@@ -36,6 +38,7 @@ function App() {
         <button
           style={{
             backgroundColor: currentPage === "ads" ? "#4daa57" : "#f9eccc",
+            color: "#754668",
           }}
           onClick={() => {
             setCurrentPage("ads");
@@ -46,6 +49,7 @@ function App() {
         <button
           style={{
             backgroundColor: currentPage === "details" ? "#4daa57" : "#f9eccc",
+            color: "#754668",
           }}
           onClick={() => {
             setCurrentPage("details");
@@ -56,6 +60,7 @@ function App() {
         <button
           style={{
             backgroundColor: currentPage === "result" ? "#4daa57" : "#f9eccc",
+            color: "#754668",
           }}
           onClick={() => {
             setCurrentPage("result");
