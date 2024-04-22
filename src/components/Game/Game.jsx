@@ -1,5 +1,5 @@
 import styles from "./Game.module.css";
-import { questions } from "../data/questions";
+import { questions } from "../../data/questions";
 import { useState } from "react";
 
 export default function Game({ setCurrentPage }) {
@@ -18,10 +18,15 @@ export default function Game({ setCurrentPage }) {
   return (
     <>
       <div className={styles.container}>
-        <h2>GAME </h2>
-        {currentIndex + 1} / {questions.length} <br />
-        {questions[currentIndex].q}
-        <br />
+        <div className={styles.userNameContainer}>
+          <div className={styles.nameOfUser}></div>
+        </div>
+        <p className={styles.heading}>GAME </p>
+        <p className={styles.text}>
+          {currentIndex + 1} / {questions.length}
+        </p>
+        <p className={styles.text}>{questions[currentIndex].q}</p>
+
         <div
           className={styles.answerBox}
           style={{

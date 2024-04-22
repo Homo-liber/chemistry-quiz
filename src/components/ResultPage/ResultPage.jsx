@@ -1,0 +1,30 @@
+import styles from "./ResultPage.module.css";
+
+export default function ResultPage({ setCurrentPage }) {
+  return (
+    <>
+      <div className={styles.container}>
+        <p className={styles.heading}>RESULT</p>
+
+        <p className={styles.text}>
+          Congratulations User! 🧬 Excellent result!
+        </p>
+        <div className={styles.yellowBox}>
+          <p className={styles.text}>You answered</p>
+          <p className={styles.text}>13 out of 15</p>
+          <p className={styles.text}>questions correctly</p>
+          <p className={styles.text}>Great result!</p>
+          <p className={styles.emoji1}>🎉 🥳</p>
+        </div>
+        <button
+          className={styles.resultbutton}
+          onClick={() => {
+            setCurrentPage("welcome");
+          }}
+        >
+          NEW GAME
+        </button>
+      </div>
+    </>
+  );
+}
