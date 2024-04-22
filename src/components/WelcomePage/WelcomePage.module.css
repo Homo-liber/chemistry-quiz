@@ -2,8 +2,10 @@
   background-color: var(--green1);
   padding: 30px;
   width: 50%;
+  min-width: 300px;
   margin: 0 auto;
   border-radius: 20px;
+  height: 650px;
 }
 
 .userNameContainer {
@@ -12,8 +14,6 @@
 
 .nameOfUser {
   height: 30px;
-  width: 10vw;
-  min-width: 80px;
   background-color: var(--green2);
   color: var(--bg-color);
   padding: 4px 6px;
@@ -25,7 +25,7 @@
   box-sizing: border-box;
 }
 
-.greetings {
+.heading {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -34,10 +34,17 @@
   font-weight: 700;
   display: block;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .picture {
   width: 30vw;
+}
+
+.formBox {
+  width: 30vw;
+  display: block;
+  margin: 0 auto;
 }
 
 .labelForm {
@@ -50,13 +57,11 @@
 }
 
 .inputForm {
-  color: var(--accent-color1);
+  width: 100%;
   height: 40px;
-  font-size: 25px;
+  color: var(--accent-color1);
+  font-size: 30px;
   padding-left: 5px;
-  width: 30vw;
-  display: block;
-  margin: 0 auto;
   margin-top: 10px;
   box-sizing: border-box;
   border: none;
@@ -65,12 +70,14 @@
 }
 
 .loginButton {
-  border-radius: 5px;
-  font-size: 25px;
+  width: 100%;
   height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
   display: block;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: var(--bg-color);
   color: var(--accent-color1);
 }
