@@ -1,4 +1,5 @@
 import "./App.css";
+import ChemistryQuiz from "./components/ChemistryQuiz/ChemistryQuiz";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import Game from "./components/Game/Game";
 import Ads from "./components/Ads/Ads";
@@ -11,19 +12,22 @@ function App() {
 
   return (
     <>
-      {currentPage === "welcome" ? (
-        <WelcomePage setCurrentPage={setCurrentPage} />
-      ) : currentPage === "game" ? (
-        <Game setCurrentPage={setCurrentPage} />
-      ) : currentPage === "ads" ? (
-        <Ads setCurrentPage={setCurrentPage} />
-      ) : currentPage === "result" ? (
-        <ResultPage setCurrentPage={setCurrentPage} />
-      ) : currentPage === "details" ? (
-        <DetailsAds setCurrentPage={setCurrentPage} />
-      ) : (
-        <h2>Seite nicht gefunden</h2>
-      )}
+      <ChemistryQuiz />
+      <div className="container">
+        {currentPage === "welcome" ? (
+          <WelcomePage setCurrentPage={setCurrentPage} />
+        ) : currentPage === "game" ? (
+          <Game setCurrentPage={setCurrentPage} />
+        ) : currentPage === "ads" ? (
+          <Ads setCurrentPage={setCurrentPage} />
+        ) : currentPage === "result" ? (
+          <ResultPage setCurrentPage={setCurrentPage} />
+        ) : currentPage === "details" ? (
+          <DetailsAds setCurrentPage={setCurrentPage} />
+        ) : (
+          <h2>Seite nicht gefunden</h2>
+        )}
+      </div>
     </>
   );
 }

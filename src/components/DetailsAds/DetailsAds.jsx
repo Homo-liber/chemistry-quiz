@@ -3,11 +3,12 @@ import styles from "./DetailsAds.module.css";
 export default function DetailsAds({ setCurrentPage }) {
   return (
     <>
-      <div
-        className={styles.container}
-        style={{ backgroundColor: "white", border: "solid 5px var(--green2)" }}
-      >
-        <p className={styles.heading}>Details of ads</p>
+      <div className={styles.whiteBox}>
+        <div className={styles.userNameContainer}>
+          <div className={styles.nameOfUser}></div>
+        </div>
+
+        <div className={styles.heading}>Details of ads</div>
 
         <p className={styles.text} style={{ textAlign: "justify" }}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
