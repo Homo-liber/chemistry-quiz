@@ -15,7 +15,7 @@ export default function WelcomePage({ setCurrentPage }) {
   let newName = myFunction();
 
   return (
-    <div className={styles.container}>
+    <>
       <div className={styles.userNameContainer}>
         <div className={styles.nameOfUser}>{newName}</div>
       </div>
@@ -29,18 +29,20 @@ export default function WelcomePage({ setCurrentPage }) {
             console.log(username);
           }}
         >
-          <label htmlFor="user-name" className={styles.labelForm}>
-            Enter your name:
-          </label>
-          <input
-            value={username}
-            onChange={(text) => {
-              setUsername(text.target.value);
-            }}
-            id="user-name"
-            type="text"
-            className={styles.inputForm}
-          />
+          <div className={styles.labelInputBox}>
+            <label htmlFor="user-name" className={styles.labelForm}>
+              Enter your name:
+            </label>
+            <input
+              value={username}
+              onChange={(text) => {
+                setUsername(text.target.value);
+              }}
+              id="user-name"
+              type="text"
+              className={styles.inputForm}
+            />
+          </div>
           <button className={styles.loginButton}>LOGIN</button>
         </form>
       </div>
@@ -52,6 +54,6 @@ export default function WelcomePage({ setCurrentPage }) {
       >
         START
       </button>
-    </div>
+    </>
   );
 }

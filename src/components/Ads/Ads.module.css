@@ -1,23 +1,35 @@
-.container {
-  background-color: var(--green1);
-  padding: 30px;
-  width: 50%;
-  min-width: 300px;
-  margin: 0 auto;
-  border-radius: 20px;
-  height: 650px;
+.userNameContainer {
+  display: flex;
+  justify-content: end;
+  width: 100%;
 }
+
+.nameOfUser {
+  color: var(--bg-color);
+  font-size: 20px;
+  height: 30px;
+  width: 120px;
+  background-color: var(--green2);
+  border-radius: 5px;
+  padding: 4px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heading {
+  width: 100%;
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 5px;
   color: var(--accent-color1);
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   display: block;
   text-align: center;
   text-transform: uppercase;
 }
+
 .adsImage {
   padding-bottom: 30px;
   max-width: 25vw;
@@ -40,6 +52,9 @@
 
 .adsButton {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
   padding: 0;
   margin: 0;
   padding: 20px;
@@ -48,8 +63,6 @@
   background-color: var(--accent-color2);
   color: var(--bg-color);
   border: none;
-
-  width: 300px;
   border-radius: 13px;
 }
 

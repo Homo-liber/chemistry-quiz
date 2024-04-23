@@ -10,10 +10,22 @@
   margin-bottom: 30px;
   background-color: var(--green1);
 }
-button {
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: var(--green1);
+  padding: 30px;
+  width: 50%;
+  height: 90%;
+  min-width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+/* button {
   margin: 20px 5px;
   font-size: 30px;
   border: none;
   border-radius: 5px;
   padding: 5px 15px;
-}
+} */
