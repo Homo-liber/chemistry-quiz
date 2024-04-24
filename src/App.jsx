@@ -9,21 +9,36 @@ import { useState } from "react";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("welcome");
+  const [loggedInUser, setLoggedInUser] = useState(null);
+
+  function handleLogin(username) {
+    setLoggedInUser(username);
+  }
 
   return (
     <>
       <ChemistryQuiz />
       <div className="container">
         {currentPage === "welcome" ? (
-          <WelcomePage setCurrentPage={setCurrentPage} />
+          <WelcomePage
+            setCurrentPage={setCurrentPage}
+            onLogin={handleLogin}
+            loggedInUser={loggedInUser}
+          />
         ) : currentPage === "game" ? (
-          <Game setCurrentPage={setCurrentPage} />
+          <Game setCurrentPage={setCurrentPage} loggedInUser={loggedInUser} />
         ) : currentPage === "ads" ? (
-          <Ads setCurrentPage={setCurrentPage} />
+          <Ads setCurrentPage={setCurrentPage} loggedInUser={loggedInUser} />
         ) : currentPage === "result" ? (
-          <ResultPage setCurrentPage={setCurrentPage} />
+          <ResultPage
+            setCurrentPage={setCurrentPage}
+            loggedInUser={loggedInUser}
+          />
         ) : currentPage === "details" ? (
-          <DetailsAds setCurrentPage={setCurrentPage} />
+          <DetailsAds
+            setCurrentPage={setCurrentPage}
+            loggedInUser={loggedInUser}
+          />
         ) : (
           <h2>Seite nicht gefunden</h2>
         )}

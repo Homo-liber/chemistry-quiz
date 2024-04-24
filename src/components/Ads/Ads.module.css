@@ -74,3 +74,9 @@
 .adsButton:active {
   background-color: var(--green2);
 }
+
+@media (max-width: 1024px) {
+  .adsButtonsBox {
+    display: block;
+  }
+}

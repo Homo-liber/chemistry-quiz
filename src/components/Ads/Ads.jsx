@@ -1,11 +1,11 @@
 import styles from "./Ads.module.css";
 import adsPhoto from "../../assets/ads.jpg";
 
-export default function Ads({ setCurrentPage }) {
+export default function Ads({ setCurrentPage, loggedInUser }) {
   return (
     <>
       <div className={styles.userNameContainer}>
-        <div className={styles.nameOfUser}></div>
+        <div className={styles.nameOfUser}>{loggedInUser}</div>
       </div>
 
       <p className={styles.heading}>Advertisement</p>

@@ -1,11 +1,11 @@
 import styles from "./DetailsAds.module.css";
 
-export default function DetailsAds({ setCurrentPage }) {
+export default function DetailsAds({ setCurrentPage, loggedInUser }) {
   return (
     <>
       <div className={styles.whiteBox}>
         <div className={styles.userNameContainer}>
-          <div className={styles.nameOfUser}></div>
+          <div className={styles.nameOfUser}>{loggedInUser}</div>
         </div>
 
         <div className={styles.heading}>Details of ads</div>
