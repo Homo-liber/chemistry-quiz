@@ -2,22 +2,13 @@ import styles from "./WelcomePage.module.css";
 import startPic from "../../assets/startpic.jpg";
 import { useState } from "react";
 
-export default function WelcomePage({ setCurrentPage }) {
+export default function WelcomePage({ setCurrentPage, onLogin, loggedInUser }) {
   const [username, setUsername] = useState("");
-
-  function myFunction() {
-    if (username == "") {
-      return "Username";
-    } else {
-      return username;
-    }
-  }
-  let newName = myFunction();
 
   return (
     <>
       <div className={styles.userNameContainer}>
-        <div className={styles.nameOfUser}>{newName}</div>
+        <div className={styles.nameOfUser}>{loggedInUser}</div>
       </div>
 
       <div className={styles.heading}>Welcome! </div>
@@ -27,6 +18,7 @@ export default function WelcomePage({ setCurrentPage }) {
           onSubmit={(event) => {
             event.preventDefault();
             console.log(username);
+            onLogin(username);
           }}
         >
           <div className={styles.labelInputBox}>
