@@ -1,6 +1,11 @@
 import styles from "./ResultPage.module.css";
+import { questions } from "../../data/questions";
 
-export default function ResultPage({ setCurrentPage, loggedInUser }) {
+export default function ResultPage({
+  setCurrentPage,
+  loggedInUser,
+  correctly,
+}) {
   return (
     <>
       <div className={styles.userNameContainer}>
@@ -14,7 +19,9 @@ export default function ResultPage({ setCurrentPage, loggedInUser }) {
       </p>
       <div className={styles.yellowBox}>
         <p className={styles.text}>You answered</p>
-        <p className={styles.text}>13 out of 15</p>
+        <p className={styles.text}>
+          {correctly} out of {questions.length}
+        </p>
         <p className={styles.text}>questions correctly</p>
         <p className={styles.text}>Great result!</p>
         <p className={styles.emoji1}>🎉 🥳</p>

@@ -12,6 +12,7 @@ export default function WelcomePage({ setCurrentPage, onLogin, loggedInUser }) {
       </div>
 
       <div className={styles.heading}>Welcome! </div>
+
       <img src={startPic} className={styles.picture} alt="start image" />
       <div className={styles.formBox}>
         <form

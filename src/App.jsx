@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import ChemistryQuiz from "./components/ChemistryQuiz/ChemistryQuiz";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
@@ -5,14 +6,18 @@ import Game from "./components/Game/Game";
 import Ads from "./components/Ads/Ads";
 import DetailsAds from "./components/DetailsAds/DetailsAds";
 import ResultPage from "./components/ResultPage/ResultPage";
-import { useState } from "react";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("welcome");
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const [correctly, setCorrectly] = useState(0);
 
   function handleLogin(username) {
     setLoggedInUser(username);
+  }
+
+  function handleIncrement() {
+    setCorrectly(correctly + 1);
   }
 
   return (
@@ -26,13 +31,19 @@ function App() {
             loggedInUser={loggedInUser}
           />
         ) : currentPage === "game" ? (
-          <Game setCurrentPage={setCurrentPage} loggedInUser={loggedInUser} />
+          <Game
+            setCurrentPage={setCurrentPage}
+            loggedInUser={loggedInUser}
+            correctly={correctly}
+            handleIncrement={handleIncrement}
+          />
         ) : currentPage === "ads" ? (
           <Ads setCurrentPage={setCurrentPage} loggedInUser={loggedInUser} />
         ) : currentPage === "result" ? (
           <ResultPage
             setCurrentPage={setCurrentPage}
             loggedInUser={loggedInUser}
+            correctly={correctly}
           />
         ) : currentPage === "details" ? (
           <DetailsAds

@@ -2,7 +2,11 @@ import styles from "./Game.module.css";
 import { questions } from "../../data/questions";
 import { useState } from "react";
 
-export default function Game({ setCurrentPage, loggedInUser }) {
+export default function Game({
+  setCurrentPage,
+  loggedInUser,
+  handleIncrement,
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -141,6 +145,9 @@ export default function Game({ setCurrentPage, loggedInUser }) {
         className={styles.nextbutton}
         disabled={selectedOption === null}
         onClick={() => {
+          if (selectedOption == questions[currentIndex].correctAnswer) {
+            handleIncrement();
+          }
           if (currentIndex < questions.length - 1) {
             handleClick();
           } else {

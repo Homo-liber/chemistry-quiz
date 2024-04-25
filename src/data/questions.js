@@ -11,17 +11,17 @@ export const questions = [
     correctAnswer: 2,
     index: 1,
   },
-  // {
-  //   q: "What is the maximum number of atoms a protein molecule can contain?",
-  //   answer: [
-  //     "1024",
-  //     "infinity, no maximum",
-  //     "tens of thousands",
-  //     "100 at most",
-  //   ],
-  //   correctAnswer: 2,
-  //   index: 2,
-  // },
+  {
+    q: "What is the maximum number of atoms a protein molecule can contain?",
+    answer: [
+      "1024",
+      "infinity, no maximum",
+      "tens of thousands",
+      "100 at most",
+    ],
+    correctAnswer: 2,
+    index: 2,
+  },
   // {
   //   q: "What chemical element is the most abundant on Earth?",
   //   answer: ["Hydrogen", "Oxygen", "Nitrogen", "Water"],
