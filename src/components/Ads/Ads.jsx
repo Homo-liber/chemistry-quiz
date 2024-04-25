@@ -9,9 +9,9 @@ export default function Ads({ setCurrentPage, loggedInUser }) {
       </div>
 
       <p className={styles.heading}>Advertisement</p>
+
       <img src={adsPhoto} alt="adsImage" className={styles.adsImage} />
       <p className={styles.text}>
-        {" "}
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sint
         nulla rem est totam illo veniam quam error! Eius, aspernatur.
       </p>
