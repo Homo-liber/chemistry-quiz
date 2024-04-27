@@ -5,6 +5,7 @@ export default function ResultPage({
   setCurrentPage,
   loggedInUser,
   correctly,
+  setCorrectly,
 }) {
   return (
     <>
@@ -30,6 +31,7 @@ export default function ResultPage({
         className={styles.resultbutton}
         onClick={() => {
           setCurrentPage("welcome");
+          setCorrectly(0);
         }}
       >
         NEW GAME

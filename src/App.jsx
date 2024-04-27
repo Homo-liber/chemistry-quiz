@@ -44,6 +44,7 @@ function App() {
             setCurrentPage={setCurrentPage}
             loggedInUser={loggedInUser}
             correctly={correctly}
+            setCorrectly={setCorrectly}
           />
         ) : currentPage === "details" ? (
           <DetailsAds

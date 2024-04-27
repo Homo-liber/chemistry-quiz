@@ -3,7 +3,6 @@
   justify-content: end;
   width: 100%;
 }
-
 .nameOfUser {
   color: var(--bg-color);
   font-size: 20px;
@@ -16,7 +15,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .heading {
   width: 100%;
   display: block;
@@ -29,7 +27,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 .text {
   color: var(--accent-color1);
   font-size: 30px;
@@ -37,20 +34,20 @@
   margin: 0;
   padding: 0;
 }
-
+.boxABCD {
+  display: block;
+  justify-content: space-between;
+}
 .boxAB {
-  /* background-color: pink; */
   display: flex;
   gap: 10px;
 }
-
 .boxCD {
-  /* background-color: rgb(244, 208, 160); */
   display: flex;
   gap: 10px;
 }
 .answerBox {
-  width: 30vw;
+  width: 100%;
   margin: 0 auto;
   margin-top: 10px;
   padding: 10px;
@@ -62,7 +59,6 @@
   border-radius: 10px;
   height: 50px;
 }
-
 input[type="radio"] {
   appearance: none;
   padding: 10px;
@@ -70,11 +66,9 @@ input[type="radio"] {
   background-color: #fff;
   border-radius: 50%;
 }
-
 input[type="radio"]:checked {
   background-color: var(--accent-color1);
 }
-
 .nextbutton {
   display: block;
   margin: 0 auto;
@@ -87,16 +81,13 @@ input[type="radio"]:checked {
   width: 300px;
   border-radius: 13px;
 }
-
 .nextbutton:hover {
   background-color: var(--bg-color);
   color: var(--accent-color1);
 }
-
 .nextbutton:active {
   background-color: var(--green2);
 }
-
 .buttongame {
   width: 100%;
   background-color: var(--bg-color);
@@ -107,17 +98,14 @@ input[type="radio"]:checked {
   padding-bottom: 10px;
   text-align: left;
 }
-
 .buttongame:hover {
   background-color: var(--green2);
   color: var(--bg-color);
 }
-
 .buttongame:active {
   background-color: var(--accent-color2);
   color: #000;
 }
-
 @media (max-width: 1024px) {
   .boxAB {
     display: block;
