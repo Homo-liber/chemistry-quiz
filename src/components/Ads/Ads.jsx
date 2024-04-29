@@ -11,10 +11,10 @@ export default function Ads({ setCurrentPage, loggedInUser }) {
       <p className={styles.heading}>Advertisement</p>
 
       <img src={adsPhoto} alt="adsImage" className={styles.adsImage} />
-      <p className={styles.text}>
+      {/* <p className={styles.text}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sint
         nulla rem est totam illo veniam quam error! Eius, aspernatur.
-      </p>
+      </p> */}
       <div className={styles.adsButtonsBox}>
         <button
           className={styles.adsButton}

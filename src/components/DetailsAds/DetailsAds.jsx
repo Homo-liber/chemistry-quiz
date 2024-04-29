@@ -11,14 +11,17 @@ export default function DetailsAds({ setCurrentPage, loggedInUser }) {
         <div className={styles.heading}>Details of ads</div>
 
         <p className={styles.text} style={{ textAlign: "justify" }}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          ea eaque at deserunt reprehenderit officiis illum dolorem inventore
-          nisi eveniet amet enim possimus, perferendis doloribus tempora
-          mollitia distinctio voluptatem rem? <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Blanditiis ea eaque at deserunt reprehenderit perferendis doloribus
-          tempora.
+          Chemistry serves as the basis for prosperity in a modern society and
+          provides the prerequisites for the necessary recycling economy. This
+          is the message the museum wants to convey. With a collection of
+          historically valuable original systems, machines and apparatus from
+          the chemical industry from the region, it is unique in Europe. Over
+          300 exhibits are currently on display in the outdoor area of the
+          technology park and provide an insight into high-pressure technology
+          as well as plastics and electrochemistry. The individual exhibits are
+          grouped together in exhibition complexes. These include the ammonia
+          synthesis chamber from the early years of this process, a historical
+          chemical train as well as a distillation plant and much more.
         </p>
 
         <a
