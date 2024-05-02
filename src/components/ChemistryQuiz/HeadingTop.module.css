@@ -1,0 +1,22 @@
+.headingTop {
+  font-size: 40px;
+  color: var(--green2);
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1920px) {
+  .headingTop {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .headingTop {
+    font-size: 30px;
+  }
+}

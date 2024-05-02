@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import ChemistryQuiz from "./components/ChemistryQuiz/ChemistryQuiz";
+import HeadingTop from "./components/ChemistryQuiz/HeadingTop";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import Game from "./components/Game/Game";
 import Ads from "./components/Ads/Ads";
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <ChemistryQuiz />
+      <HeadingTop />
       <div className="container">
         {currentPage === "welcome" ? (
           <WelcomePage

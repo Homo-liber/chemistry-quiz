@@ -20,7 +20,7 @@ export default function Game({
   let greenColor = "#4daa57";
 
   return (
-    <>
+    <div className={styles.containerTransparent}>
       <div className={styles.userNameContainer}>
         <div className={styles.nameOfUser}>{loggedInUser}</div>
       </div>
@@ -158,6 +158,6 @@ export default function Game({
       >
         NEXT
       </button>
-    </>
+    </div>
   );
 }

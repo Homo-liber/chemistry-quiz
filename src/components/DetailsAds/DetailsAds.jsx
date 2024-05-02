@@ -8,7 +8,7 @@ export default function DetailsAds({ setCurrentPage, loggedInUser }) {
           <div className={styles.nameOfUser}>{loggedInUser}</div>
         </div>
 
-        <div className={styles.heading}>Details of ads</div>
+        <div className={styles.heading}>Details</div>
 
         <p className={styles.text} style={{ textAlign: "justify" }}>
           Chemistry serves as the basis for prosperity in a modern society and

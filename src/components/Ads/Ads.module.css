@@ -31,8 +31,10 @@
 }
 
 .adsImage {
-  padding-bottom: 30px;
   max-width: 25vw;
+  display: block;
+  margin: 0 auto;
+  background-color: darksalmon;
 }
 
 .text {
@@ -46,6 +48,7 @@
 .adsButtonsBox {
   padding: 0;
   margin: 0;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -78,5 +81,30 @@
 @media (max-width: 1024px) {
   .adsButtonsBox {
     display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .heading {
+    padding-top: 20px;
+    font-size: 35px;
+  }
+  .adsImage {
+    max-width: 80vw;
+    border-radius: 9px;
+    margin-top: 25px;
+  }
+  .adsButtonsBox {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  .adsButton {
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 25px;
+    max-width: 80vw;
+    height: 60px;
+    border-radius: 9px;
   }
 }
