@@ -6,7 +6,7 @@ export default function WelcomePage({ setCurrentPage, onLogin, loggedInUser }) {
   const [username, setUsername] = useState("");
 
   return (
-    <>
+    <div className={styles.containerTransparent}>
       <div className={styles.userNameContainer}>
         <div className={styles.nameOfUser}>{loggedInUser}</div>
       </div>
@@ -47,6 +47,6 @@ export default function WelcomePage({ setCurrentPage, onLogin, loggedInUser }) {
       >
         START
       </button>
-    </>
+    </div>
   );
 }

@@ -10,13 +10,3 @@
   --bg-color: #f9eccc;
   --red-color: #ffcccc;
 }
-
-img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 30px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
