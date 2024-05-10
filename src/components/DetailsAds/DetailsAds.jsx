@@ -2,7 +2,7 @@ import styles from "./DetailsAds.module.css";
 
 export default function DetailsAds({ setCurrentPage, loggedInUser }) {
   return (
-    <>
+    <div className={styles.containerTransparent}>
       <div className={styles.whiteBox}>
         <div className={styles.userNameContainer}>
           <div className={styles.nameOfUser}>{loggedInUser}</div>
@@ -41,6 +41,6 @@ export default function DetailsAds({ setCurrentPage, loggedInUser }) {
           BACK
         </button>
       </div>
-    </>
+    </div>
   );
 }
