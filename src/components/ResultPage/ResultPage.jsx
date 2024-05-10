@@ -8,7 +8,7 @@ export default function ResultPage({
   setCorrectly,
 }) {
   return (
-    <>
+    <div className={styles.containerTransparent}>
       <div className={styles.userNameContainer}>
         <div className={styles.nameOfUser}>{loggedInUser}</div>
       </div>
@@ -36,6 +36,6 @@ export default function ResultPage({
       >
         NEW GAME
       </button>
-    </>
+    </div>
   );
 }

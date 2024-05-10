@@ -93,3 +93,18 @@
     box-sizing: border-box;
   }
 }
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+.containerTransparent {
+	width: 50vw;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.nameOfUser {
+margin-top: 20px;
+margin-right: 20px;
+}
+.yellowBox {
+	margin-top: 20px;
+}
+}

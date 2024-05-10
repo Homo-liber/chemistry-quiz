@@ -3,7 +3,7 @@ import adsPhoto from "../../assets/ads.jpg";
 
 export default function Ads({ setCurrentPage, loggedInUser }) {
   return (
-    <>
+    <div className={styles.containerTransparent}>
       <div className={styles.userNameContainer}>
         <div className={styles.nameOfUser}>{loggedInUser}</div>
       </div>
@@ -30,6 +30,6 @@ export default function Ads({ setCurrentPage, loggedInUser }) {
           See result
         </button>
       </div>
-    </>
+    </div>
   );
 }

@@ -4,13 +4,11 @@
   padding: 20px;
   border-radius: 20px;
 }
-
 .userNameContainer {
   display: flex;
   justify-content: end;
   width: 100%;
 }
-
 .nameOfUser {
   color: var(--bg-color);
   font-size: 20px;
@@ -23,7 +21,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .heading {
   width: 100%;
   display: block;
@@ -36,7 +33,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 .text {
   display: block;
   color: var(--accent-color1);
@@ -44,7 +40,6 @@
   text-align: center;
   margin-top: 10px;
 }
-
 .backbutton {
   display: block;
   margin: 0 auto;
@@ -56,12 +51,10 @@
   padding: 20px 60px;
   border-radius: 13px;
 }
-
 .backbutton:hover {
   background-color: var(--bg-color);
   color: var(--accent-color1);
 }
-
 .backbutton:active {
   background-color: var(--green2);
 }
@@ -82,4 +75,18 @@
     margin-top: 40px;
     box-sizing: border-box;
   }
+}
+
+@media (min-width: 1281px) and (max-width: 1920px) {
+	.containerTransparent {
+    width: 50vw;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+	.whiteBox {
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-bottom: 10px;
+	}
 }
