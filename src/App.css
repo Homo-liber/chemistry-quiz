@@ -1,12 +1,24 @@
  @media (min-width: 1281px) and (max-width: 1920px) {
-  .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	.containerBig {
+		background-color: var(--accent-color1);
+		min-height: 100vh;
+		width: 100%;
+	}
 	#root {
 		margin: 0;
 		padding: 0;
+	}
+	.container {
+		display: block;
+		margin: 0 auto;
+		background-color: var(--green1);
+		width: 50vw;
+		padding: 30px;
+		border-radius: 20px;
 	}
 	.menu {
 		display: flex;
@@ -14,20 +26,5 @@
 		margin: 0 auto;
 		margin-bottom: 30px;
 		background-color: var(--green1);
-	}
-	.containerBig {
-		background-color: var(--accent-color1);
-		min-height: 100vh;
-		width: 100%;
-	}
-	.container {
-		display: block;
-		margin: 0;
-		padding: 0;
-		margin: 0 auto;
-		background-color: var(--green1);
-		width: 50vw;
-		padding: 30px;
-		border-radius: 20px;
 	}
 } 
