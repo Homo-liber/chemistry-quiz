@@ -1,9 +1,9 @@
 .headingTop {
   font-size: 40px;
-  color: var(--green2);
+  color: #FFF;
   text-align: center;
-  margin-top: 10px;
   padding-bottom: 10px;
+	padding-top: 30px;
   width: 100%;
   display: flex;
   justify-content: center;

@@ -8,34 +8,36 @@ export default function ResultPage({
   setCorrectly,
 }) {
   return (
-    <div className={styles.containerTransparent}>
-      <div className={styles.userNameContainer}>
-        <div className={styles.nameOfUser}>{loggedInUser}</div>
-      </div>
+    <div className={styles.container}>
+      <div className={styles.containerTransparent}>
+        <div className={styles.userNameContainer}>
+          <div className={styles.nameOfUser}>{loggedInUser}</div>
+        </div>
 
-      <p className={styles.heading}>RESULT</p>
+        <p className={styles.heading}>RESULT</p>
 
-      <p className={styles.text} style={{ marginTop: 10 }}>
-        Congratulations {loggedInUser}! 🧬 Excellent result!
-      </p>
-      <div className={styles.yellowBox}>
-        <p className={styles.text}>You answered</p>
-        <p className={styles.text}>
-          {correctly} out of {questions.length}
+        <p className={styles.text} style={{ marginTop: 10 }}>
+          Congratulations {loggedInUser}! 🧬 Excellent result!
         </p>
-        <p className={styles.text}>questions correctly</p>
-        <p className={styles.text}>Great result!</p>
-        <p className={styles.emoji1}>🎉 🥳</p>
+        <div className={styles.yellowBox}>
+          <p className={styles.text}>You answered</p>
+          <p className={styles.text}>
+            {correctly} out of {questions.length}
+          </p>
+          <p className={styles.text}>questions correctly</p>
+          <p className={styles.text}>Great result!</p>
+          <p className={styles.emoji1}>🎉 🥳</p>
+        </div>
+        <button
+          className={styles.resultbutton}
+          onClick={() => {
+            setCurrentPage("welcome");
+            setCorrectly(0);
+          }}
+        >
+          NEW GAME
+        </button>
       </div>
-      <button
-        className={styles.resultbutton}
-        onClick={() => {
-          setCurrentPage("welcome");
-          setCorrectly(0);
-        }}
-      >
-        NEW GAME
-      </button>
     </div>
   );
 }

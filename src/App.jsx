@@ -21,9 +21,9 @@ function App() {
   }
 
   return (
-    <>
+    <div className="containerBig">
       <HeadingTop />
-      <div className="container">
+      
         {currentPage === "welcome" ? (
           <WelcomePage
             setCurrentPage={setCurrentPage}
@@ -54,8 +54,8 @@ function App() {
         ) : (
           <h2>Seite nicht gefunden</h2>
         )}
-      </div>
-    </>
+      
+    </div>
   );
 }
 
