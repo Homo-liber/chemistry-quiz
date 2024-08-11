@@ -29,6 +29,11 @@
   text-align: center;
   text-transform: uppercase;
 }
+.greetingsBox {
+	width: 30vw;
+  min-width: 270px;
+	margin: 0 auto;
+}
 
 .text {
   color: var(--accent-color1);
